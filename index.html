@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Compound Interest</title>
+</head>
+<body>
+    <div id="compoundInterest">
+
+        <div class="container">
+            
+            <form action="" class="form">
+                <h1>Compound interest calculator</h1>
+                <div class="form-control">
+                    <label for="principal">Principal</label>
+                    <input type="tel" class="form-control" name="principal" v-model=principal>
+                </div>
+                <div class="form-control">
+                    <label for="principal">Rate</label>
+                    <input type="tel" class="form-control" name="rate" v-model=rate>
+                </div>
+                <div class="form-control">
+                    <label for="principal">No. of years</label>
+                    <input type="tel" class="form-control" name="years" v-model=years>
+                </div>
+                <div class="form-control">
+                    <label for="principal">Compounding Rate</label>
+                    <input type="tel" class="form-control" name="compoundrate" v-model=compoundrate>
+                </div>
+                   <h4> <p>The total amount {{calcCompoundInterest}} <span>Naira</span></p></h4>
+                <h3>The interest is {{calcInterest}} <span>Naira</span></h3>
+                <button v-on:click="computeReset">Reset</button>
+            </form>
+            
+        </div>
+
+    </div>
+
+    <script src="vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
