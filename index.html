@@ -29,8 +29,8 @@
                     <label for="principal">Compounding Rate</label>
                     <input type="tel" class="form-control" name="compoundrate" v-model=compoundrate>
                 </div>
-                   <h4> <p>The total amount {{calcCompoundInterest}} <span>&#8358;</span></p></h4>
-                <h3>The interest is {{calcInterest}} <span>&#8358;</span></h3>
+                   <h4> <p>The total amount <span>&#8358;</span> {{calcCompoundInterest}} </p></h4>
+                <h3>The interest is <span>&#8358;</span> {{calcInterest}} </h3>
                 <button v-on:click="computeReset">Reset</button>
             </form>
             
